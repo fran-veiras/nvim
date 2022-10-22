@@ -8,7 +8,7 @@ end
 packer.startup(function()
   local use = Packer.use
   use 'jose-elias-alvarez/null-ls.nvim'
-  use { "catppuccin/nvim", as = "catppuccin" }
+  use "EdenEast/nightfox.nvim"
   use 'wbthomason/packer.nvim'
   use 'Mofiqul/dracula.nvim'
   use 'nvim-lualine/lualine.nvim'

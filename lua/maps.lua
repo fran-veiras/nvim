@@ -53,3 +53,9 @@ keymap.set('', '<C-x>', ':d<Return>') -- remove line
 
 keymap.set('', 'c', ':yank<Return>') -- copy lines selected
 
+
+-- split
+keymap.set('', 'vs', ':vertical split<Return>')
+
+
+
