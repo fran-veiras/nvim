@@ -11,6 +11,8 @@ if is_mac then
   require('macos')
 end
 
+vim.cmd [[set relativenumber]]
+
 local rt = {
     server = {
         settings = {
