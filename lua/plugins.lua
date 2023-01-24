@@ -57,4 +57,12 @@ packer.startup(function()
   }
   use { "LinArcX/telescope-env.nvim" }
   use 'simrat39/rust-tools.nvim'
+
+  -- comments 
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+  }
 end)

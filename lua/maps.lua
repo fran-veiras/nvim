@@ -57,5 +57,13 @@ keymap.set('', 'c', ':yank<Return>') -- copy lines selected
 -- split
 keymap.set('', 'vs', ':vertical split<Return>')
 
+-- new comment 
+keymap.set('', '<C-/>', ':norm i //<Return>')
+
+-- end of line
+keymap.set('', '<S-l>', ':normal $<Return>')
+
+-- begin of line
+keymap.set('', '<S-h>', ':normal _<Return>')
 
 
