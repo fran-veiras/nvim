@@ -8,9 +8,7 @@ end
 packer.startup(function()
   local use = Packer.use
   use 'jose-elias-alvarez/null-ls.nvim'
-  use "EdenEast/nightfox.nvim"
   use 'wbthomason/packer.nvim'
-  use 'Mofiqul/dracula.nvim'
   use 'nvim-lualine/lualine.nvim'
   use {
     "williamboman/nvim-lsp-installer",
@@ -57,6 +55,10 @@ packer.startup(function()
   }
   use { "LinArcX/telescope-env.nvim" }
   use 'simrat39/rust-tools.nvim'
+
+
+  -- theme 
+  use 'marko-cerovac/material.nvim'
 
   -- comments 
   use {

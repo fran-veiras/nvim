@@ -12,6 +12,8 @@ if is_mac then
 end
 
 vim.cmd [[set relativenumber]]
+vim.g.material_style = "darker"
+vim.cmd 'colorscheme material'
 
 local rt = {
     server = {
