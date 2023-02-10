@@ -12,8 +12,10 @@ if is_mac then
 end
 
 vim.cmd [[set relativenumber]]
-vim.g.material_style = "darker"
-vim.cmd 'colorscheme material'
+vim.cmd [[set autoindent noexpandtab tabstop=4 shiftwidth=4]]
+
+-- setup must be called before loading
+--vim.cmd.colorscheme "catppuccin/nvim"
 
 local rt = {
     server = {
@@ -33,4 +35,5 @@ local rt = {
         }
     },
 }
+
 require('rust-tools').setup(rt)

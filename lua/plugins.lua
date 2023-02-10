@@ -58,7 +58,8 @@ packer.startup(function()
 
 
   -- theme 
-  use 'marko-cerovac/material.nvim'
+  -- use 'marko-cerovac/material.nvim'
+  use 'navarasu/onedark.nvim'
 
   -- comments 
   use {

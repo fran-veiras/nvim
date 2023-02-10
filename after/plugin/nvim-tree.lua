@@ -16,8 +16,6 @@ tree.setup {
   renderer = {
     group_empty = true,
   },
-  filters = {
-    dotfiles = false,
-  },
+  filters = { dotfiles = false, custom = { '^.git$' }}
 }
 
