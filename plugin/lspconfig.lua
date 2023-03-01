@@ -128,9 +128,8 @@ for type, icon in pairs(signs) do
 end
 
 vim.diagnostic.config({
-  virtual_text = {
-    prefix = '●'
-  },
+  virtual_lines = true,
+  virtual_text = false,
   update_in_insert = true,
   float = {
     source = "always", -- Or "if_many"

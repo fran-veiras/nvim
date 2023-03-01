@@ -2,6 +2,7 @@ require('base')
 require('highlights')
 require('maps')
 require('plugins')
+require("lsp_lines").setup()
 
 local has = vim.fn.has
 local is_mac = has "macunix"
@@ -13,7 +14,6 @@ end
 
 vim.cmd [[set relativenumber]]
 vim.cmd [[set autoindent noexpandtab tabstop=4 shiftwidth=4]]
-
 -- setup must be called before loading
 --vim.cmd.colorscheme "catppuccin/nvim"
 

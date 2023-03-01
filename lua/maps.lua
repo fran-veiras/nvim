@@ -67,3 +67,12 @@ keymap.set('', '<S-l>', ':normal $<Return>')
 keymap.set('', '<S-h>', ':normal _<Return>')
 
 
+-- see errors 
+
+keymap.set(
+  "",
+  "ee",
+  require("lsp_lines").toggle,
+  { desc = "Toggle lsp_lines" }
+)
+
