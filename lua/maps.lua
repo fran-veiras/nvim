@@ -76,3 +76,8 @@ keymap.set(
   { desc = "Toggle lsp_lines" }
 )
 
+
+keymap.set('n', "gd", function() vim.lsp.buf.definition() end)
+
+
+

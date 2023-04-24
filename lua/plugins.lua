@@ -11,7 +11,8 @@ packer.startup(function()
   use 'wbthomason/packer.nvim'
   use 'nvim-lualine/lualine.nvim'
   use {
-    "williamboman/nvim-lsp-installer",
+  	"williamboman/mason.nvim",
+	"williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
   }
   use 'hrsh7th/cmp-nvim-lsp'
