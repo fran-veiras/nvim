@@ -69,13 +69,7 @@ keymap.set('', '<S-h>', ':normal _<Return>')
 
 -- see errors 
 
-keymap.set(
-  "",
-  "ee",
-  require("lsp_lines").toggle,
-  { desc = "Toggle lsp_lines" }
-)
-
+keymap.set('', 'ee', ':lua vim.diagnostic.open_float(0, {scope="line"})<Return>')
 
 keymap.set('n', "gd", function() vim.lsp.buf.definition() end)
 
