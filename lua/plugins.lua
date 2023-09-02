@@ -7,7 +7,6 @@ end
 
 packer.startup(function()
   local use = Packer.use
-  use 'jose-elias-alvarez/null-ls.nvim'
   use 'wbthomason/packer.nvim'
   use 'nvim-lualine/lualine.nvim'
   use {
@@ -23,6 +22,9 @@ packer.startup(function()
     'nvim-treesitter/nvim-treesitter',
     run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
   }
+  use 'jose-elias-alvarez/null-ls.nvim' -- Use Neovim as a language server to inject LSP diagnostics, code actions, etc.
+  use 'MunifTanjim/prettier.nvim' -- prettier plugin for neovim
+
   use {
 	"windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup {} end
@@ -39,9 +41,6 @@ packer.startup(function()
     config = function()
         local saga = require("lspsaga")
 
-        saga.init_lsp_saga({
-            -- your configuration
-        })
     end,
   })
   use 'lewis6991/gitsigns.nvim'
