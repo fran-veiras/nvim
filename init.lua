@@ -14,6 +14,7 @@ end
 vim.cmd [[set relativenumber]]
 vim.cmd [[set autoindent noexpandtab tabstop=4 shiftwidth=4]]
 vim.cmd [[set mouse=]]
+vim.cmd [[colorscheme solarized-osaka]]
 
 -- setup must be called before loading
 

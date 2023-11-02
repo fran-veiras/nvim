@@ -6,7 +6,7 @@ lualine.setup {
     icons_enabled = true,
     section_separators = { left = '', right = '' },
     component_separators = { left = '', right = '' },
-    disabled_filetypes = {}
+    disabled_filetypes = {},
   },
   sections = {
     lualine_a = { 'mode' },
