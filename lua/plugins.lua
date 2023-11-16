@@ -8,7 +8,10 @@ end
 packer.startup(function()
   local use = Packer.use
   use 'wbthomason/packer.nvim'
-  use 'nvim-lualine/lualine.nvim'
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
   use {
   	"williamboman/mason.nvim",
 	"williamboman/mason-lspconfig.nvim",
@@ -60,8 +63,8 @@ packer.startup(function()
   -- theme 
   -- use 'marko-cerovac/material.nvim'
   -- use 'navarasu/onedark.nvim'
-
-  use 'craftzdog/solarized-osaka.nvim'
+  -- use 'craftzdog/solarized-osaka.nvim'
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   -- comments 
   use {
