@@ -20,7 +20,11 @@ ts.setup {
     "swift",
     "css",
     "html",
-    "lua"
+    "lua",
+	"javascript",
+	"markdown",
+    "markdown_inline",
+	"typescript",
   },
   autotag = {
     enable = true,

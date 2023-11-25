@@ -12,9 +12,8 @@ if is_mac then
 end
 
 vim.cmd [[set relativenumber]]
-vim.cmd [[set autoindent noexpandtab tabstop=4 shiftwidth=4]]
+vim.cmd [[set autoindent noexpandtab tabstop=4 shiftwidth=4 ]]
 vim.cmd [[set mouse=]]
-
 -- setup must be called before loading
 
 local rt = {
