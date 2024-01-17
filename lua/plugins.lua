@@ -51,11 +51,7 @@ packer.startup(function()
   use ({"akinsho/toggleterm.nvim", tag = '*', config = function()
     require("toggleterm").setup()
   end})
-  use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.0',
-    -- or                            , branch = '0.1.x',
-    requires = { {'nvim-lua/plenary.nvim'} }
-  }
+  use { "nvim-telescope/telescope.nvim", tag = '0.1.4' }
   use { "LinArcX/telescope-env.nvim" }
   use 'simrat39/rust-tools.nvim'
 
@@ -73,4 +69,20 @@ packer.startup(function()
         require('Comment').setup()
     end
   }
+
+
+-- Gpt copilot
+	use({
+  "jackMort/ChatGPT.nvim",
+    config = function()
+      require("chatgpt").setup()
+    end,
+    requires = {
+      "MunifTanjim/nui.nvim",
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim"
+    }
+})
+
+
 end)
